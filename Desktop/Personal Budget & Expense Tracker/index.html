@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <!-- Halkan ayaanu ku xirnay style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Qeybta 1aad: Madaxa Bogga -->
+    <header class="main-header">
+        <h1>My Budget Tracker</h1>
+        <p>Track your income and expenses in one place.</p>
+    </header>
+
+    <!-- Add Expense Section -->
+    <section id="add-expense-section">
+        <h2>Add Expense</h2>
+        <div class="form-group">
+            <label for="expense-name">Expense Name:</label>
+            <input type="text" id="expense-name" placeholder="e.g., Grocery, Rent">
+        </div>
+
+        <div class="form-group">
+            <label for="expense-amount">Amount ($):</label>
+            <input type="number" id="expense-amount" placeholder="e.g., 50">
+        </div>
+
+        <div class="form-group">
+            <label for="expense-category">Category:</label>
+            <input type="text" id="expense-category" placeholder="e.g., Food, Bills">
+        </div>
+    </section>
+
+    <!-- Your Expenses Placeholder Section -->
+    <section id="expenses-list-section">
+        <h2>Your Expenses</h2>
+        <p class="placeholder-text">No expenses yet</p>
+    </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget & Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Header with Multimedia Logo (Requirement 3) -->
+    <header class="main-header">
+        <!-- 3. Image Element -->
+        <img src="https://via.placeholder.com/40" alt="Budget Logo" width="40" style="vertical-align: middle; margin-right: 10px;">
+        <h1>Personal Budget & Expense Tracker</h1>
+    </header>
+
+    <!-- Add Expense Section (Requirement 2 & 4) -->
+    <section id="add-expense-section">
+        <h2>Add New Expense</h2>
+        
+        <!-- Interactive Details Element (Requirement 4) -->
+        <details>
+            <summary>How to use this tracker</summary>
+            <p>Fill in the expense name, amount, select a category, and choose a date, then click 'Add Expense'.</p>
+        </details>
+
+        <!-- 2. Form Wrapper with matching IDs and Select Dropdown -->
+        <form>
+            <div class="form-group">
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" placeholder="e.g., Groceries">
+            </div>
+
+            <div class="form-group">
+                <label for="expense-amount">Amount ($):</label>
+                <input type="number" id="expense-amount" placeholder="e.g., 50">
+            </div>
+
+            <div class="form-group">
+                <label for="expense-category">Category:</label>
+                <!-- Select Dropdown with 5 options -->
+                <select id="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="expense-date">Date:</label>
+                <input type="date" id="expense-date">
+            </div>
+
+            <!-- Button with type="button" -->
+            <button type="button" id="add-btn">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- Expenses List Section with Table (Requirement 1) -->
+    <section id="expenses-list-section" class="expenses-section">
+        <h2>Your Expenses</h2>
+        
+        <!-- 1. HTML Table Structure -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Groceries</td>
+                    <td>$45.00</td>
+                    <td>Food</td>
+                    <td>2026-06-01</td>
+                </tr>
+                <tr>
+                    <td>Bus Ticket</td>
+                    <td>$5.00</td>
+                    <td>Transport</td>
+                    <td>2026-06-02</td>
+                </tr>
+                <tr>
+                    <td>Apartment Rent</td>
+                    <td>$500.00</td>
+                    <td>Rent</td>
+                    <td>2026-06-03</td>
+                </tr>
+                <tr>
+                    <td>Movie Night</td>
+                    <td>$20.00</td>
+                    <td>Entertainment</td>
+                    <td>2026-06-04</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>$4.00</td>
+                    <td>Other</td>
+                    <td>2026-06-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 3. Multimedia YouTube Iframe Element -->
+    <section id="multimedia-section" style="margin-top: 20px;">
+        <h2>Budgeting Tips Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+</body>
+</html>
