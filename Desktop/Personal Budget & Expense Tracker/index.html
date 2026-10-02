@@ -153,11 +153,165 @@
         </table>
     </section>
 
+    
     <!-- 3. Multimedia YouTube Iframe Element -->
     <section id="multimedia-section" style="margin-top: 20px;">
         <h2>Budgeting Tips Video</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Budgeting Tips" frameborder="0" allowfullscreen></iframe>
     </section>
 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome icons for modern UI look -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar / Navigation Menu -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2><i class="fa-solid fa-wallet"></i> SpendWise</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-right-left"></i> Transactions</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bullseye"></i> Budgets</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-piggy-bank"></i> Savings</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-title">
+                <h1>Dashboard Overview</h1>
+                <p>Welcome back, Ahmed!</p>
+            </div>
+            <div class="header-profile">
+                <i class="fa-regular fa-bell notification-icon"></i>
+                <div class="user-avatar">
+                    <span>AH</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content (Dashboard Cards) -->
+        <main class="main-content">
+            <section class="cards-grid">
+                
+                <!-- Food Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon food"><i class="fa-solid fa-utensils"></i></div>
+                        <span class="card-badge">Monthly</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Food & Dining</h3>
+                        <p class="card-amount">$450.00</p>
+                        <span class="card-trend negative">+12% from last month</span>
+                    </div>
+                </article>
+
+                <!-- Transport Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon transport"><i class="fa-solid fa-car"></i></div>
+                        <span class="card-badge">Monthly</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Transport</h3>
+                        <p class="card-amount">$180.50</p>
+                        <span class="card-trend positive">-5% from last month</span>
+                    </div>
+                </article>
+
+                <!-- Rent Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon rent"><i class="fa-solid fa-house"></i></div>
+                        <span class="card-badge">Monthly</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Rent & Housing</h3>
+                        <p class="card-amount">$1,200.00</p>
+                        <span class="card-trend neutral">On Track</span>
+                    </div>
+                </article>
+
+                <!-- Entertainment Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon entertainment"><i class="fa-solid fa-film"></i></div>
+                        <span class="card-badge">Monthly</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Entertainment</h3>
+                        <p class="card-amount">$95.00</p>
+                        <span class="card-trend positive">-8% from last month</span>
+                    </div>
+                </article>
+
+                <!-- Savings Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon savings"><i class="fa-solid fa-piggy-bank"></i></div>
+                        <span class="card-badge">Goal</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Savings</h3>
+                        <p class="card-amount">$3,500.00</p>
+                        <span class="card-trend positive">+15% saved</span>
+                    </div>
+                </article>
+
+                <!-- Utilities Card -->
+                <article class="card" tabindex="0">
+                    <div class="card-header">
+                        <div class="card-icon utilities"><i class="fa-solid fa-bolt"></i></div>
+                        <span class="card-badge">Monthly</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Utilities</h3>
+                        <p class="card-amount">$210.00</p>
+                        <span class="card-trend negative">+3% from last month</span>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SpendWise</h1>
+        <p>Your personal budget management tool.</p>
+        <button id="calcBtn">Start Budget Calculation</button>
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Linking JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
